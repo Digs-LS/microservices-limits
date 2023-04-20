@@ -2,20 +2,30 @@ package com.in28minutes.microservices.currencyexchangeservice;
 
 import java.math.BigDecimal;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class CurrencyExchange {
 
+	@Id
 	private Long id;
+	
+	@Column(name = "currency_from")
 	private String from;
+	
+	@Column(name = "currency_to	")
 	private String to;
 	private BigDecimal conversionMultiple;
-	private String evironment;
+	private String environment;
 
 	public String getEvironment() {
-		return evironment;
+		return environment;
 	}
 
 	public void setEvironment(String evironment) {
-		this.evironment = evironment;
+		this.environment = evironment;
 	}
 
 	public CurrencyExchange() {
