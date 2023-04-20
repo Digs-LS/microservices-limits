@@ -8,11 +8,20 @@ public class CurrencyExchange {
 	private String from;
 	private String to;
 	private BigDecimal conversionMultiple;
-	
-	public CurrencyExchange() {
-		
+	private String evironment;
+
+	public String getEvironment() {
+		return evironment;
 	}
-	
+
+	public void setEvironment(String evironment) {
+		this.evironment = evironment;
+	}
+
+	public CurrencyExchange() {
+
+	}
+
 	public CurrencyExchange(Long id, String from, String to, BigDecimal conversionMultiple) {
 		super();
 		this.id = id;
@@ -20,27 +29,35 @@ public class CurrencyExchange {
 		this.to = to;
 		this.conversionMultiple = conversionMultiple;
 	}
+
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getFrom() {
 		return from;
 	}
+
 	public void setFrom(String from) {
 		this.from = from;
 	}
+
 	public String getTo() {
 		return to;
 	}
+
 	public void setTo(String to) {
 		this.to = to;
 	}
+
 	public BigDecimal getConversionMultiple() {
 		return conversionMultiple;
 	}
+
 	public void setConversionMultiple(BigDecimal conversionMultiple) {
 		this.conversionMultiple = conversionMultiple;
 	}
