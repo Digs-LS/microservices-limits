@@ -3,21 +3,20 @@ package com.in28minutes.microservices.currencyconversionservice;
 import java.math.BigDecimal;
 
 public class CurrencyConversion {
-
 	private Long id;
 	private String from;
 	private String to;
 	private BigDecimal quantity;
 	private BigDecimal conversionMultiple;
 	private BigDecimal totalCalculatedAmount;
-	private String evironment;
+	private String environment;
 
 	public CurrencyConversion() {
-
+		
 	}
-
-	public CurrencyConversion(Long id, String from, String to, BigDecimal quantity, BigDecimal conversionMultiple,
-			BigDecimal totalCalculatedAmount, String evironment) {
+	
+	public CurrencyConversion(Long id, String from, String to, BigDecimal quantity, BigDecimal conversionMultiple, 
+			BigDecimal totalCalculatedAmount, String environment) {
 		super();
 		this.id = id;
 		this.from = from;
@@ -25,7 +24,7 @@ public class CurrencyConversion {
 		this.conversionMultiple = conversionMultiple;
 		this.quantity = quantity;
 		this.totalCalculatedAmount = totalCalculatedAmount;
-		this.evironment = evironment;
+		this.environment = environment;
 	}
 
 	public Long getId() {
@@ -76,11 +75,15 @@ public class CurrencyConversion {
 		this.totalCalculatedAmount = totalCalculatedAmount;
 	}
 
-	public String getEvironment() {
-		return evironment;
+	public String getEnvironment() {
+		return environment;
 	}
 
-	public void setEvironment(String evironment) {
-		this.evironment = evironment;
+	public void setEnvironment(String environment) {
+		this.environment = environment;
 	}
+	
+	
+	
+
 }
